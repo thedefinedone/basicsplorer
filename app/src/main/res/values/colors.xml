@@ -1,0 +1,5 @@
+<resources>
+    <color name="blackPrimary">#000000</color>
+    <color name="goldAccent">#FFD700</color>
+    <color name="whiteText">#FFFFFF</color>
+</resources>
