@@ -17,4 +17,4 @@ Retro 90s terminal-style file manager and disk utility for Android, built using 
 ## License
 Distributed under the MIT License. See LICENSE for more information.
 
-**Developer**: THEDEFINEDONE
+**Developer**: thedefinedone
