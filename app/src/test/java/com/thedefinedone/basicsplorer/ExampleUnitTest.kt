@@ -1,4 +1,4 @@
-package com.example.basicsplorer
+package com.thedefinedone.basicsplorer
 
 import org.junit.Test
 

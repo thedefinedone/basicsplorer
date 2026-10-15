@@ -1,4 +1,4 @@
-package com.example.basicsplorer
+package com.thedefinedone.basicsplorer
 import android.content.Context
 import android.content.SharedPreferences
 import android.net.Uri

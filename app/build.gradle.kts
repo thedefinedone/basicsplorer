@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.basicsplorer"
+    namespace = "com.thedefinedone.basicsplorer"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.basicsplorer"
+        applicationId = "com.thedefinedone.basicsplorer"
         minSdk = 31
         targetSdk = 34
         versionCode = 35

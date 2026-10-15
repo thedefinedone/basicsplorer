@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.components
+package com.thedefinedone.basicsplorer.ui.components
 
 import android.content.Intent
 import android.widget.Toast
@@ -15,7 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.documentfile.provider.DocumentFile
-import com.example.basicsplorer.ui.theme.PressStartFont
+import com.thedefinedone.basicsplorer.ui.theme.PressStartFont
 
 @Composable
 fun FileItem(

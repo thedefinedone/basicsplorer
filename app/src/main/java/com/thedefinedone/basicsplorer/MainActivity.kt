@@ -1,4 +1,4 @@
-package com.example.basicsplorer
+package com.thedefinedone.basicsplorer
 
 import android.content.Context
 import android.content.Intent
@@ -18,8 +18,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.basicsplorer.ui.screens.*
-import com.example.basicsplorer.ui.theme.BasicsplorerTheme
+import com.thedefinedone.basicsplorer.ui.screens.*
+import com.thedefinedone.basicsplorer.ui.theme.BasicsplorerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

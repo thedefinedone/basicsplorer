@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.screens
+package com.thedefinedone.basicsplorer.ui.screens
 
 import android.os.Environment
 import android.os.StatFs
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basicsplorer.ui.theme.PressStartFont
+import com.thedefinedone.basicsplorer.ui.theme.PressStartFont
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

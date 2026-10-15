@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.screens
+package com.thedefinedone.basicsplorer.ui.screens
 
 import android.net.Uri
 import androidx.compose.foundation.BorderStroke
@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.basicsplorer.ui.theme.PressStartFont
+import com.thedefinedone.basicsplorer.ui.theme.PressStartFont
 
 @Composable
 fun DashboardScreen(navController: NavController) {

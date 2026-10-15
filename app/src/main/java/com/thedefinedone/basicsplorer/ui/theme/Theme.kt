@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.theme
+package com.thedefinedone.basicsplorer.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme

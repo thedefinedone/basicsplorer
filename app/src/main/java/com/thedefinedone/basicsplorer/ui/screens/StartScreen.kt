@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.screens
+package com.thedefinedone.basicsplorer.ui.screens
 
 import android.content.Context
 import androidx.compose.animation.core.*
@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basicsplorer.ui.theme.PressStartFont
+import com.thedefinedone.basicsplorer.ui.theme.PressStartFont
 
 @Composable
 fun StartScreen(onStartClicked: () -> Unit) {

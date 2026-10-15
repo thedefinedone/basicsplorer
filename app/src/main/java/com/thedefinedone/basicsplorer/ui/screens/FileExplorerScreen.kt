@@ -1,4 +1,4 @@
-package com.example.basicsplorer.ui.screens
+package com.thedefinedone.basicsplorer.ui.screens
 
 import android.content.Context
 import android.content.Intent
@@ -23,7 +23,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.FileProvider
-import com.example.basicsplorer.ui.theme.PressStartFont
+import com.thedefinedone.basicsplorer.ui.theme.PressStartFont
 import java.io.File
 
 @Composable
