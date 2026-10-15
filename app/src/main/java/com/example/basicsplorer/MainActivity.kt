@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,11 +25,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            if (!Environment.isExternalStorageManager()) {
-                val intent = Intent(android.provider.Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION)
-                startActivity(intent)
-            }
+        // Ask for "All files access" once on Android 11+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
+            startActivity(
+                Intent(
+                    Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION,
+                    Uri.parse("package:$packageName")
+                )
+            )
         }
 
         val prefs = getSharedPreferences("basicsplorer_prefs", Context.MODE_PRIVATE)
@@ -48,6 +52,7 @@ class MainActivity : ComponentActivity() {
                     ) {
                         composable("start") {
                             StartScreen(onStartClicked = {
+                                prefs.edit().putBoolean("is_first_launch", false).apply()
                                 navController.navigate("dashboard") {
                                     popUpTo("start") { inclusive = true }
                                 }
@@ -65,7 +70,8 @@ class MainActivity : ComponentActivity() {
                                 defaultValue = "/storage/emulated/0"
                             })
                         ) { backStackEntry ->
-                            val path = backStackEntry.arguments?.getString("path") ?: "/storage/emulated/0"
+                            val path = backStackEntry.arguments?.getString("path")
+                                ?: "/storage/emulated/0"
                             FileExplorerScreen(
                                 path = path,
                                 onBack = { navController.popBackStack() },

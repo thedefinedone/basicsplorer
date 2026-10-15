@@ -39,7 +39,7 @@ fun DashboardScreen(navController: NavController) {
         )
 
         Text(
-            text = "v0.35 // OFFLINE DISK UTILITY",
+            text = "v0.70 // OFFLINE DISK UTILITY",
             fontFamily = PressStartFont,
             fontSize = 8.sp,
             color = Color.Gray,
